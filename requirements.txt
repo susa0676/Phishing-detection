@@ -1,5 +1,7 @@
-tldextract
+Flask
+numpy
 pandas
 scikit-learn
 tensorflow
 joblib
+tldextract
