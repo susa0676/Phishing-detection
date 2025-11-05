@@ -7,11 +7,15 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # CRITICAL: This line is essential for the predict_email function to work.
 from preprocess import process_single_email 
 
+MODEL_PATH = "models/phishing_model.keras"
+TOKENIZER_PATH = "models/tokenizer.pkl"
+SCALER_PATH = "models/url_scaler.pkl"
+URL_FEATURE = "models/url_feature_columns.pkl"
 # Re-define the required core components from your project files
-model = load_model("models/phishing_model.keras")
-tokenizer = joblib.load("models/tokenizer.pkl")
-scaler = joblib.load("models/url_scaler.pkl")
-feature_columns = joblib.load("models/url_feature_columns.pkl")
+model = load_model(MODEL_PATH)
+tokenizer = joblib.load(TOKENIZER_PATH)
+scaler = joblib.load(SCALER_PATH)
+feature_columns = joblib.load(URL_FEATURE)
 max_len = 300
 
 # The rest of the functions from preprocess.py (clean_text, extract_first_url, etc.)
@@ -39,4 +43,5 @@ def predict_email(email_text, threshold=0.5):
     
     label = "Phishing" if score >= threshold else "Legitimate"
         
+
     return score, label
