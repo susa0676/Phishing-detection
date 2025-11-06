@@ -3,24 +3,13 @@ import numpy as np
 import pandas as pd
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-import time, psutil, os, logging
-logging.basicConfig(level=logging.INFO)
-def log_state(tag=""):
-    proc = psutil.Process(os.getpid())
-    logging.info(f"{tag} | pid={os.getpid()} rss_mb={proc.memory_info().rss/1024/1024:.1f}")
-
 # CRITICAL: This line is essential for the predict_email function to work.
 from preprocess import process_single_email 
 
-og_state("startup begin")
 model = load_model("models/phishing_model.keras")
 tokenizer = joblib.load("models/tokenizer.pkl")
 scaler = joblib.load("models/url_scaler.pkl")
-# warm up: tiny fake input (same shapes)
-_dummy_text = pad_sequences([[1,2,3]], maxlen=300)
-_dummy_num = scaler.transform(np.zeros((1, len(joblib.load("models/url_feature_columns.pkl")))))
-_ = model.predict([_dummy_text, _dummy_num], verbose=0)
-log_state("startup done - warmed up model")
+feature_columns = joblib.load("models/url_feature_columns.pkl")
 max_len = 300
 
 # The rest of the functions from preprocess.py (clean_text, extract_first_url, etc.)
@@ -50,4 +39,5 @@ def predict_email(email_text, threshold=0.5):
         
 
     return score, label
+
 
