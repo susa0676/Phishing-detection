@@ -9,8 +9,8 @@ It is deployed live on **Railway.app**, integrated directly with GitHub for cont
 
 ## 🌐 Live Demo
 
-🔗 **App URL:** [https://phishing-detection-ql9n.up.railway.app](https://phishing-detection-ql9n.up.railway.app)  
-📦 **GitHub Repository:** [https://github.com/SudharsananGanapathy/phishing-email-detection](https://github.com/SudharsananGanapathy/phishing-email-detection)
+🔗 **App URL:** [https://web-production-4236.up.railway.app/](https://web-production-4236.up.railway.app/)
+📦 **GitHub Repository:** [https://github.com/susa0676/Phishing-detection](https://github.com/susa0676/Phishing-detection)
 
 ---
 
@@ -204,8 +204,15 @@ This project is licensed under the **MIT License** — free for educational and 
 **Sudharsanan Ganapathy**
 📫 [GitHub Profile](https://github.com/SudharsananGanapathy)
 🎓 IT Student | AI & Cybersecurity Enthusiast
-🚀 Guided Project: *Phishing Email Detection System using Machine Learning*
-
+🚀 Guided Project: *Phishing Email Detection System using Hybrid Neural Network*
+**AS Milton**
+🎓 IT Student | AI & Cybersecurity Enthusiast
+**Kulasekara Muthu**
+🎓 IT Student | AI & Cybersecurity Enthusiast
+**Saravanan A**
+🎓 IT Student | AI & Cybersecurity Enthusiast
+**Sathish K**
+🎓 IT Student | AI & Cybersecurity Enthusiast
 ---
 
 ## ❤️ Acknowledgements
@@ -228,8 +235,8 @@ This project is licensed under the **MIT License** — free for educational and 
 
 ## 🧾 Citation (for reports or papers)
 
-> Ganapathy, S. (2025). *Phishing Email Detection using Machine Learning (LSTM + URL Feature Fusion)*.
-> GitHub Repository: [https://github.com/SudharsananGanapathy/phishing-email-detection](https://github.com/SudharsananGanapathy/phishing-email-detection)
+> Sudharsanan, G. (2025). *Phishing Email Detection using Machine Learning (LSTM + URL Feature Fusion)*.
+> GitHub Repository: [https://github.com/susa0676/Phishing-detection](https://github.com/susa0676/Phishing-detection)
 
 ---
 
