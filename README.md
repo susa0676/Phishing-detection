@@ -205,14 +205,19 @@ This project is licensed under the **MIT License** — free for educational and 
 📫 [GitHub Profile](https://github.com/SudharsananGanapathy)
 🎓 IT Student | AI & Cybersecurity Enthusiast
 🚀 Guided Project: *Phishing Email Detection System using Hybrid Neural Network*
+
 **AS Milton**
 🎓 IT Student | AI & Cybersecurity Enthusiast
+
 **Kulasekara Muthu**
 🎓 IT Student | AI & Cybersecurity Enthusiast
+
 **Saravanan A**
 🎓 IT Student | AI & Cybersecurity Enthusiast
+
 **Sathish K**
 🎓 IT Student | AI & Cybersecurity Enthusiast
+
 ---
 
 ## ❤️ Acknowledgements
