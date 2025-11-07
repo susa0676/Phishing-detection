@@ -1,5 +1,5 @@
 
-# 🛡️ Phishing Email Detection using Machine Learning
+# 🛡️ Phishing Email Detection using Hybrid Neural Network
 
 A full-stack **Phishing Email Detection System** that uses **Deep Learning (LSTM)** and **URL-based feature extraction** to classify emails as *Phishing* or *Legitimate*.  
 The project includes a Flask-based web interface for users to paste email content and get real-time predictions.  
